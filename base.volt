@@ -25,7 +25,7 @@
 subPage.volt inherit Base.volt
 -----------
 
-{% block Body %}
+{% block body %}
 
    {% block hero%}
    {% endBlock %}
