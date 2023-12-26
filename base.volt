@@ -1,20 +1,32 @@
 
-----basePage.volt--------
+basePage.volt--------
 
-{{header}}
-
+{{include header.volt}}
+and blocks : 
+<head>
+pageTitle,pageMeta
+pageCustomCss,pageCustomJS
+</head>
+             
 
 {% block Body %}
 {% endBlock %}
 
 
-{{footer}}
+{{include footer.volt}}
+with blocks : pageURL
+              pageOGImage
+
 
 --------------------------------------------
---FINAL
----homePage.volt inherit basePage.volt ---
+(FINAL)
+homePageTemplate.volt inherit basePage.volt ---
 
-  Code to show Hero for HomePage here
+  
+  fill the Blocks for HomePage here
+  
+  Html layouts for Hero
+  with data
   {{headline}}
   {{headline Description}}
 
