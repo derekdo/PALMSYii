@@ -1,43 +1,53 @@
 
-----base.volt--------
+----basePage.volt--------
 
 {{header}}
 
-{% block Hero%}
-{% endBlock %}
 
-
-{% block content %}
+{% block Body %}
 {% endBlock %}
 
 
 {{footer}}
 
+--------------------------------------------
 --FINAL
----homePage.volt inherit BasePage.volt ---
+---homePage.volt inherit basePage.volt ---
 
-{% block Hero%}
   Code to show Hero for HomePage here
-{% endBlock %}
+  {{headline}}
+  {{headline Description}}
 
   Code to show content for HomePage here
+  {{content()}}
+
+--------------------------------------------
+subPage.volt inherit Base.volt
+-----------
+
+{% block Body %}
+
+   {% block hero%}
+   {% endBlock %}
+
+   {% block content%}
+   {% endBlock %}
+
 {% endBlock %}
 
 
----- subPage.volt inherit Base.volt ---
 
-{% block Hero%}
-  Code to show Hero for subPage here
-{% endBlock %}
-
-{% block content %}
-{% endBlock %}
-
+--------------------------------------------
 --FINAL
---subPageSingle.volt inherit subPage.volt--
+subPageSingle.volt inherit subPage.volt
+---------
 
 {% block content %}
-  Code to show content for Single Subpage   here
+
+  HTML UI Code to show content for Single  Subpage. Data to fill
+  {{headline}}
+  {{headline Description}}
+
 {% endBlock %}
 
 ---cardListing.volt inherit subPage.volt ---
