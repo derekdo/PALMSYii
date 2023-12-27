@@ -1,11 +1,8 @@
-
-base.volt--------
-
-{{include header.volt}}
-
 <head>
+
 {{pageTitle}},{{page Meta}}
 {{pageCustomCss}},{{pageCustomJS}}
+
 </head>
              
 <html>
