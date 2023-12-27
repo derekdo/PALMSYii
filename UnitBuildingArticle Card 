@@ -1,0 +1,21 @@
+unitListing.volt inherit cardList.volt 
+
+{% block Card %}
+  Code to show Unit Listings here
+
+{% endBlock %}
+
+FINAL
+---buildingListing.volt inherit cardListing.volt 
+
+{% block content %}
+  Code to show Building Listings here
+{% endBlock %}
+
+FINAL
+---articleListing.volt inherit subPage.volt
+
+
+{% block content %}
+  Code to show Articles Listings here
+{% endBlock %}
