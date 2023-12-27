@@ -14,7 +14,7 @@
 
 <div id="hero-section">
 {% block hero %}
-    Default-No Hero Settings
+    
 {% endBlock %}
 </div>
 
