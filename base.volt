@@ -1,5 +1,5 @@
 
-basePage.volt--------
+base.volt--------
 
 {{include header.volt}}
 
@@ -36,7 +36,7 @@ basePage.volt--------
 
 --------------------------------------------
 (FINAL)
-homePageTemplate.volt inherit basePage.volt ---
+homePage.volt extend base.volt ---
 
   
   fill the Blocks for HomePage here
@@ -70,6 +70,8 @@ subPage.volt inherit Base.volt
 {% block body %}
 
    {% block hero%}
+
+Html code for sub-page Hero
    {% endBlock %}
 
    {% block content%}
