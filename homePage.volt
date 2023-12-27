@@ -4,19 +4,16 @@ extend base.volt ---
 {% block hero %}
  
   Direct <Html layouts for homePage Hero
-  with homePage data (currentWeb.WebSettings)
+  
   {{headline}}
-  {{headline Description}} />
-  or
-  Partial ('homePageHero.volt')
+  {{headline Description}}
 
 {% endBlock %}
 
 {% block content %}
 
-  Direct <Html-section Code to show content     for HomePage here />
- or 
-{{partial('content')}}
+  Direct Html Code to show content for HomePage here
+
 
 {% endBlock %}
 
