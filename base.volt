@@ -2,20 +2,36 @@
 basePage.volt--------
 
 {{include header.volt}}
-and blocks : 
+
 <head>
-pageTitle,pageMeta
-pageCustomCss,pageCustomJS
+{{pageTitle}},{{page Meta}}
+{{pageCustomCss}},{{pageCustomJS}}
 </head>
              
+<html>
 
-{% block Body %}
+<div id="nav-header">
+   {{partial('partials/nav-header')}}
+</div>
+
+
+<div id="hero-section">
+{% block hero %}
+    Default-No Hero Settings
 {% endBlock %}
+</div>
 
 
-{{include footer.volt}}
-with blocks : pageURL
-              pageOGImage
+<div id="content-section">
+{% block content %}
+{% endBlock %}
+</div>
+
+<div id="footer">
+   {{partial('partials/footer')}}
+</div>
+
+</html>
 
 
 --------------------------------------------
@@ -25,13 +41,27 @@ homePageTemplate.volt inherit basePage.volt ---
   
   fill the Blocks for HomePage here
   
-  Html layouts for Hero
-  with data
+{% block hero %}
+ 
+  Direct <Html layouts for homePage Hero
+  with homePage data (currentWeb.WebSettings)
   {{headline}}
-  {{headline Description}}
+  {{headline Description}} />
+  or
+  Partial ('homePageHero.volt')
 
-  Code to show content for HomePage here
-  {{content()}}
+{% endBlock %}
+
+{% block content %}
+
+  Direct <Html-section Code to show content     for HomePage here />
+ or 
+{{partial('content')}}
+
+
+{% endBlock %}
+
+  
 
 --------------------------------------------
 subPage.volt inherit Base.volt
