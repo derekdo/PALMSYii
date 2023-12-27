@@ -16,6 +16,9 @@ cardList.volt inherit subPage.volt ---
   HTML Code show General Card List
     {%block cardTitle}
     {%endBlock%}
+    
+    {%block cardDetails}
+    {%endBlock%}
 
   {% endFor%}
 
