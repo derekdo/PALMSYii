@@ -1,9 +1,5 @@
--------------------------
-(FINAL)
-homePage.volt extend base.volt ---
+extend base.volt ---
 
-  
-  fill the Blocks for HomePage here
   
 {% block hero %}
  
@@ -22,26 +18,11 @@ homePage.volt extend base.volt ---
  or 
 {{partial('content')}}
 
-
 {% endBlock %}
 
   
 
 --------------------------------------------
-subPage.volt inherit Base.volt
------------
-
-{% block body %}
-
-   {% block hero%}
-
-Html code for sub-page Hero
-   {% endBlock %}
-
-   {% block content%}
-   {% endBlock %}
-
-{% endBlock %}
 
 
 
