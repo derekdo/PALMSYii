@@ -23,18 +23,7 @@ extend base.volt ---
 
 
 
---------------------------------------------
---FINAL
-subPageSingle.volt inherit subPage.volt
----------
 
-{% block content %}
-
-  HTML UI Code to show content for Single  Subpage. Data to fill
-  {{headline}}
-  {{headline Description}}
-
-{% endBlock %}
 
 ---cardListing.volt inherit subPage.volt ---
 
